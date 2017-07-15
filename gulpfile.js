@@ -1,14 +1,5 @@
 var gulp=require('gulp'),gulpmocha=require('gulp-mocha');
 
-var mongoOptions = {
-    db: {safe: true},
-    server: {
-        socketOptions: {
-            keepAlive: 1
-        }
-    }
-};
-
 gulp.task('default', ['watch']);
 
 gulp.task('watch',function(){
