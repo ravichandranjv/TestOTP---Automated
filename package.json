@@ -11,7 +11,7 @@
     "url": "https://github.com/ravichandranjv"
   },
   "author": "Ravichandran JV",
-  "license": "ISC",
+  "license": "CC0",
   "devDependencies": {
     "chai": "^4.1.0",
     "express": "^4.15.3",
