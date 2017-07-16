@@ -17,16 +17,8 @@
     "express": "^4.15.3",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
-    "gulp-connect": "^5.0.0",
-    "gulp-jshint": "^2.0.4",
-    "gulp-mocha": "^4.3.1",
-    "gulp-util": "^3.0.8",
-    "jshint-stylish": "^2.2.1",
-    "mongoose": "^4.11.1",
-    "mongoose-mock": "^0.4.0",
-    "proxyquire": "^1.8.0",
-    "sinon-chai": "^2.11.0",
-    "supertest": "^3.0.0",
+  "gulp-mocha": "^4.3.1",
+ "supertest": "^3.0.0",
     "xml2js": "^0.4.17"
   }
 }
