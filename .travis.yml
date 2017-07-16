@@ -10,6 +10,3 @@ node_js:-'6.10.2'
 - npm install xml2js --save-dev
 - npm install mongodb --save-dev
 - gulp
-
-
-script:gulp
