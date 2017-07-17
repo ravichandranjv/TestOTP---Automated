@@ -22,7 +22,7 @@ after_success:
 - codecov
 script:
 - mocha test/testmodel2
-- istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+- istanbul cover ./node_modules/mocha/bin/_mocha
 
 
 
