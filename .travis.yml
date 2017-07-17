@@ -19,7 +19,10 @@ before_script:
 - mongoimport --db mydb --collection users --file data/mydb_users_65435097575.json
 - sleep 15
 after_success:
-- codecov --token=:adb91ff4-fb9e-4458-810c-6df77b3e2a5b
+- codecov
 script:
 - mocha test/testmodel2
+- istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+
+
 
