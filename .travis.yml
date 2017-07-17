@@ -15,6 +15,6 @@ before_script:
 - npm install xml2js --save-dev
 - npm install mongodb --save-dev
 - sleep 15
-- mongoimport --db mydb --collection users --file data\mydb_users_65435097575.json
+- mongoimport --db mydb --collection users --file data\\mydb_users_65435097575.json
 script:
 - mocha test\testmodel2
