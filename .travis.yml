@@ -2,9 +2,8 @@ language:
 - node_js
 node_js:
    - '6.10.2'
-cache:
- - directories:
-   - node_modules
+services:
+ - mongodb
 before_script:
 - npm install gulp --save-dev
 - npm install mocha --save-dev
@@ -15,5 +14,7 @@ before_script:
 - npm install gulp-mocha --save-dev
 - npm install xml2js --save-dev
 - npm install mongodb --save-dev
+- sleep 15
+- mongoimport --db mydb --collection users --file data\mydb_users_65435097575.json
 script:
-- gulp
+- mocha test\testmodel2
