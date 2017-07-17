@@ -15,13 +15,11 @@ before_script:
 - npm install xml2js --save-dev
 - npm install mongodb --save-dev
 - npm install codecov --save-dev
+- npm install istanbul --save-dev
 - mongoimport --db mydb --collection users --file data/mydb_users_65435097575.json
 - sleep 15
-- codecov --token=:adb91ff4-fb9e-4458-810c-6df77b3e2a5b
-- sleep 5
 after_success:
-  - ./codecov -e TRAVIS_NODE_VERSION -f coverage/coverage.json
+- codecov --token=:adb91ff4-fb9e-4458-810c-6df77b3e2a5b
 script:
 - mocha test/testmodel2
-- istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
 
