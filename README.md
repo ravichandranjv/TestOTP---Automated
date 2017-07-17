@@ -8,6 +8,8 @@ Sequence
 1. Run 'gulp' after starting mongod to listen on port 27017
 2. Open data.xml and save to trigger the gulp watch task
 
+https://travis-ci.org/ravichandranjv/TestOTP---Automated.svg?branch=ravichandranjv-patch-1-travis-cache
+
 [![Coverage Status](https://codecov.io/gh/ravichandranjv/TestOTP---Automated/badge.svg?branch=ravichandranjv-patch-1-travis-cache)](https://codecov.io/gh/ravichandranjv/TestOTP---Automated?branch=ravichandranjv-patch-1-travis-cache)
 
 Watch for the next - "Automated to trigger test based on time/timestamp"
