@@ -2,6 +2,8 @@ language:
 - node_js
 node_js:
    - '6.10.2'
+services:
+ - mongodb
 before_script:
 - npm install gulp --save-dev
 - npm install mocha --save-dev
@@ -12,5 +14,15 @@ before_script:
 - npm install gulp-mocha --save-dev
 - npm install xml2js --save-dev
 - npm install mongodb --save-dev
+- npm install codecov --save-dev
+- npm install istanbul --save-dev
+- mongoimport --db mydb --collection users --file data/mydb_users_65435097575.json
+- sleep 15
+after_success:
+- codecov
 script:
-- gulp
+- mocha test/testmodel2
+- istanbul cover ./node_modules/mocha/bin/_mocha
+
+
+
