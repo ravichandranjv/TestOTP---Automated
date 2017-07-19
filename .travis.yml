@@ -23,6 +23,8 @@ after_success:
 script:
 - mocha test/testmodel2
 - istanbul cover ./node_modules/mocha/bin/_mocha
-
+cache:
+directories:
+- node_modules
 
 
