@@ -8,6 +8,7 @@ return MongoClient.connect(url).then(function(db) {
 	console.log("Connected");
     var coll=db.collection('users');
 return coll.findOne({"otp":otp}).then(function(res){
+	console.log("Response otp" +res.otp);
 		return res.otp;
 });
 });
