@@ -25,6 +25,7 @@ describe('Verifying a OTP', function () {
 			done();
 			}
 			else{			
+				console.log(response.body.otp);
 		    	expect('1234').equals(response.body.otp);			
                     	done();
 			}
