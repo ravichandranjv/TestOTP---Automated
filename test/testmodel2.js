@@ -1,6 +1,6 @@
 var chai = require('chai'),expect = chai.expect,xml2js = require('xml2js'),request = require('supertest'),fs=require('fs');
 var otpFromXml;
-describe('Verifying a OTP', function () { 
+describe('Verifying a OTP', function (done) { 
 	var server;	
 	beforeEach(function () {
 		server = require('../server').server;
