@@ -10,7 +10,6 @@ before_script:
 - npm install chai --save-dev
 - npm install express --save-dev
 - npm install fs --save-dev
-- npm install supertest --save-dev
 - npm install gulp-mocha --save-dev
 - npm install xml2js --save-dev
 - npm install mongodb --save-dev
