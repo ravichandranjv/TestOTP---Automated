@@ -5,11 +5,12 @@ var router=express.Router;
 var users=require('./source/javascript/users_otp.js');
 
 app.route('/about/:otp')
-.get(function(req,res){
+.get(function(req,res,done){
     users.getUserWithOTP(req.params.otp).then(function(items) {
       res.json({        
         "otp":items
       });
+        done();
     },function(err){
 });
 });
