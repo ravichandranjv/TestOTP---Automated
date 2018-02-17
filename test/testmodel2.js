@@ -19,7 +19,7 @@ describe('Verifying a OTP', function () {
 	request(server)
                 .get('/about/1234')
 		.expect(200)
-                .end(function (error, response) {
+                .end(function (error, response,done) {
                     if (error){ 
 			done();
 			}
