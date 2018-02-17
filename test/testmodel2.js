@@ -12,7 +12,7 @@ describe('Verifying a OTP', function () {
 		fs.readFile('data/data.xml', function(err, data) {
     			parser.parseString(data, function (err, result) {        
 			otpFromXml=result;
-			//console.log(otpFromXml);
+			console.log(otpFromXml);
     			});
 		});
 
@@ -21,6 +21,7 @@ describe('Verifying a OTP', function () {
 		.expect(200)
                 .end(function (error, response) {
                     if (error){ 
+			    console.log("Error! But runs correctly on local");
 			done();
 			}
 			else{			
