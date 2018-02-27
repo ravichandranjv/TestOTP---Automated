@@ -7,7 +7,7 @@ Base branch coverage
 Sub branch coverage
 [![Coverage Status](https://codecov.io/gh/ravichandranjv/TestOTP---Automated/badge.svg?branch=ravichandranjv-patch-1-travis-cache)](https://codecov.io/gh/ravichandranjv/TestOTP---Automated?branch=ravichandranjv-patch-1-travis-cache)
 
-
+The build errored due to a timeout event. The same works fine when the repo is cloned.
 In continuation of the test OTP scenario - https://github.com/ravichandranjv/TestOTP-A-leaner-version---semi-automated
 
 Automated Mocha test using gulp/gulp-mocha to run on Express route to access a MongoDb document and validate the expectation of the mocha test. The gulp task watches the filesystem to the 'data.xml' file that contains the OTP value.
